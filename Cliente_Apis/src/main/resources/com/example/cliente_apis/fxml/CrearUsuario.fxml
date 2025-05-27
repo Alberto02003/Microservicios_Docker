@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="724.0" prefWidth="338.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cliente_apis.controladores.CrearCuentaController">
+   <children>
+      <AnchorPane id="content1" layoutX="24.0" layoutY="87.0" prefHeight="540.0" prefWidth="291.0" style="-fx-border-color: lightgrey; -fx-border-radius: 15px;">
+         <children>
+            <Label fx:id="Crear" layoutX="14.0" layoutY="8.0" prefHeight="32.0" prefWidth="164.0" text="Crear Cuenta">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label layoutX="18.0" layoutY="97.0" text="Dirección de e-mail">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="email" layoutX="16.0" layoutY="128.0" prefHeight="27.0" prefWidth="260.0" style="-fx-border-color: black; -fx-border-radius: 10px;" />
+            <Label layoutX="18.0" layoutY="167.0" text="Contraseña">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="contrasenya" layoutX="16.0" layoutY="196.0" prefHeight="25.0" prefWidth="260.0" promptText="Al menos 6 caracteres" style="-fx-border-color: black; -fx-border-radius: 10px;" />
+            <Label layoutX="25.0" layoutY="394.0" prefHeight="17.0" prefWidth="245.0" text="Al continuar, aceptas las Condiciones de uso" />
+            <Label layoutX="22.0" layoutY="411.0" prefHeight="17.0" prefWidth="245.0" text=" y venta de Amazon. Consulta nuestro Aviso" />
+            <Label layoutX="25.0" layoutY="428.0" text="de privacidad, nuestro Aviso sobre cookies y" />
+            <Label layoutX="25.0" layoutY="445.0" text="nuestro Aviso sobre anuncios basado en " />
+            <Label layoutX="25.0" layoutY="462.0" text="interes." />
+            <Button layoutX="16.0" layoutY="492.0" mnemonicParsing="false" onAction="#CrearCuenta" prefHeight="25.0" prefWidth="260.0" style="-fx-background-color: #F7CA00;" text="Continuar" />
+            <Label layoutX="18.0" layoutY="40.0" text="Nombre">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="name" layoutX="16.0" layoutY="66.0" prefHeight="27.0" prefWidth="260.0" style="-fx-border-color: black; -fx-border-radius: 10px;" />
+            <Label layoutX="20.0" layoutY="264.0" text="Contraseña">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="contrasenya1" layoutX="18.0" layoutY="293.0" prefHeight="25.0" prefWidth="260.0" style="-fx-border-color: black; -fx-border-radius: 10px;" />
+            <ImageView fitHeight="17.0" fitWidth="15.0" layoutX="17.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/informacion.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="33.0" layoutY="235.0" text="La contraseña debe tener 6 caracteres como mínimo.">
+               <font>
+                  <Font size="9.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="rol" layoutX="20.0" layoutY="356.0" prefHeight="25.0" prefWidth="260.0">
+               <items>
+                  <FXCollections fx:factory="observableArrayList">
+                     <String fx:value="CLIENTE" />
+                     <String fx:value="ADMINISTRADOR" />
+                  </FXCollections>
+               </items>
+            </ComboBox>
+            <Label layoutX="20.0" layoutY="327.0" text="Rol">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <Label layoutX="87.0" layoutY="639.0" text="¿Ya tienes cuenta en Amazon?" />
+      <Separator layoutX="22.0" layoutY="646.0" prefHeight="3.0" prefWidth="61.0" />
+      <Separator layoutX="256.0" layoutY="648.0" prefHeight="3.0" prefWidth="61.0" />
+      <Button layoutX="23.0" layoutY="673.0" mnemonicParsing="false" onAction="#InicioSesion" prefHeight="25.0" prefWidth="291.0" style="-fx-background-color: white; -fx-border-color: #888C8C; -fx-border-radius: 20px;" text="Iniciar Sesion" />
+      <ImageView fitHeight="79.0" fitWidth="140.0" layoutX="99.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/amazon-logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

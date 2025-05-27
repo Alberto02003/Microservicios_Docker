@@ -1,0 +1,2 @@
+docker run -d --name ftp_server -p 21:21 -p 30000-30009:30000-30009 -e FTP_USER_NAME=usuario -e FTP_USER_PASS=contraseña -e FTP_USER_HOME=/ftp-server/user/user -v C:\Users\alber\Documents\FTP:/ftp-server/user/user stilliard/pure-ftpd
+

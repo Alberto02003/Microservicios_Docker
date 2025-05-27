@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="contenedor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#seleccionarTarjeta" prefHeight="249.0" prefWidth="220.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cliente_apis.controladores.ProductoCardController">
+   <children>
+      <ImageView fx:id="imagenProducto" fitHeight="148.0" fitWidth="204.0" layoutX="8.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="precioProducto" layoutX="22.0" layoutY="163.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="nombreProducto" layoutX="22.0" layoutY="211.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

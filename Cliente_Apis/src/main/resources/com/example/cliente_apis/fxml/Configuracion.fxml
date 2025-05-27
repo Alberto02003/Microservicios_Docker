@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="550.0" prefWidth="333.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cliente_apis.controladores.ConfiguracionController">
+   <children>
+      <AnchorPane prefHeight="41.0" prefWidth="341.0" style="-fx-background-color: #131921;">
+         <children>
+            <Button fx:id="back" layoutX="14.0" layoutY="4.0" mnemonicParsing="false" onAction="#Volver" prefHeight="36.0" prefWidth="31.0" style="-fx-background-color: #131921;">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/volver.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label layoutX="111.0" layoutY="7.0" text="Configuracion" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+      <AnchorPane layoutY="41.0" prefHeight="29.0" prefWidth="341.0" style="-fx-background-color: #232F3E;">
+         <children>
+            <Button layoutX="163.0" layoutY="3.0" mnemonicParsing="false" onAction="#AgregarTiposProductos" style="-fx-background-color: #232F3E;" text="Agregar Tipos de Productos" textFill="WHITE" />
+            <Button layoutX="27.0" layoutY="2.0" mnemonicParsing="false" onAction="#AgregarProductos" prefHeight="25.0" prefWidth="120.0" style="-fx-background-color: #232F3E;" text="Agregar Productos" textFill="WHITE" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="contenedorProductos" layoutY="70.0" prefHeight="477.0" prefWidth="341.0" visible="false">
+         <children>
+            <Label layoutX="29.0" layoutY="30.0" text="Nombre Producto:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nombreProducto" layoutX="29.0" layoutY="57.0" prefHeight="25.0" prefWidth="294.0" />
+            <Label layoutX="29.0" layoutY="94.0" text="Precio Producto:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="precioProducto" layoutX="29.0" layoutY="120.0" prefHeight="25.0" prefWidth="294.0" />
+            <ComboBox fx:id="CategoriaProducto" layoutX="29.0" layoutY="190.0" prefHeight="25.0" prefWidth="294.0" />
+            <Label layoutX="29.0" layoutY="163.0" text="Categoria Producto:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="agregarProducto" onAction="#CrearProducto" layoutX="29.0" layoutY="322.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="294.0" style="-fx-background-color: #F7CA00;" text="Agregar" />
+            <Label layoutX="32.0" layoutY="239.0" text="Imagen Producto:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="ruta" layoutX="32.0" layoutY="259.0" />
+            <Button layoutX="29.0" layoutY="285.0" mnemonicParsing="false" onAction="#seleccionarArchivo" prefHeight="25.0" prefWidth="294.0" style="-fx-background-color: #232F3E;" text="Seleccionar Imagen" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="contenedorCategorias" layoutY="73.0" prefHeight="477.0" prefWidth="341.0">
+         <children>
+            <Label layoutX="24.0" layoutY="26.0" text="Nombre Categoria:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nombreCategoria" layoutX="24.0" layoutY="55.0" prefHeight="29.0" prefWidth="294.0" />
+            <Button fx:id="agregarCategoria" layoutX="24.0" layoutY="113.0" mnemonicParsing="false" onAction="#agregarNuevaCategoria" prefHeight="25.0" prefWidth="294.0" style="-fx-background-color: #F7CA00;" text="Agregar" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
